@@ -41,18 +41,20 @@ In order to getting started, I had imported the json files into table using tabl
 Average spend from receipts with 'rewardsReceiptStatus' of accepted is not in the table but, considering finished as accepted ;; accepted is greater than receipts with 'rewardsReceiptStatus' of rejected
 
 
-![image](https://user-images.githubusercontent.com/22611282/178994516-8337d9dd-edce-4179-a288-14d77ace4ee1.png)
+![image](https://user-images.githubusercontent.com/109328970/179167408-4a62d144-1c4a-40d6-baf6-7246d1e257e1.png)
+
 
 
 
 
 ## When considering total number of items purchased from receipts with 'rewardsReceiptStatus’ of ‘Accepted’ or ‘Rejected’, which is greater?
 
-``` SELECT rewardsReceiptStatus, sum(purchasedItemCount) as ItemsCount FROM receipts GROUP BY rewardsReceiptStatus; ```
+``` SELECT rewardsReceiptStatus, sum(purchasedItemCount) as ItemCount FROM receipts GROUP BY rewardsReceiptStatus; ```
 
 Considering finished as accepted;; The receipts with accepted status had more purchases than of rejected.
 
-![image](https://user-images.githubusercontent.com/22611282/178995848-dea7d1ff-8095-4e98-8556-7eefc2697815.png)
+![image](https://user-images.githubusercontent.com/109328970/179167535-96db822e-4692-42b8-a481-405b408057fe.png)
+
 
 
 # Third: Evaluate the Data Quality Issues
