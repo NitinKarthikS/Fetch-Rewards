@@ -65,8 +65,7 @@ this data can be retrived once we have the product table ready. Assuming we have
 
 this data can be retrived once we have the product table ready. Assuming we have the product table; below is the query for that
 
-```select b.name,  r.purchasedItemCount from receipts r, users u, product p, brands b
-join product p on p.brand_id = b.cpg_id join users on u.id = r.userId where u.createdDate > DATEADD(mm, -6, GETDATE());```
+``` select b.name,  r.purchasedItemCount from receipts r, users u, product p, brands b join product p on p.brand_id = b.cpg_id join users on u.id = r.userId where u.createdDate > DATEADD(mm, -6, GETDATE()); ```
 
 # Third: Evaluate the Data Quality Issues
 
