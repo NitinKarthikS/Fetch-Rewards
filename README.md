@@ -3,6 +3,10 @@
 After analyzing the three Json files[ receipts, brands, users] provided, the receipts table is linked to users with userId column, indeed the recepits table has the rewardsReceiptitemList with delimitor[|] in which the rewardsProductPartnerId is present which links to the brands[cpg_id] column.
 
 Inorder to link the recepits and brands, I would like to create the product table which has the receipt_id from the receipt table, product_id which is nothing but the rewardsProductPartnerId, quantity, brand_id which is the id from the brands table.
+
+
+
+
 ![image](https://user-images.githubusercontent.com/22611282/178987292-3d6cab64-e25c-418b-9d6b-9308265dcbc9.png)
 
 
