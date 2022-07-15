@@ -25,7 +25,6 @@ In order to getting started, I had imported the json files into table using tabl
 
 ![image](https://user-images.githubusercontent.com/22611282/178991241-b827dc75-2988-4a8d-8a84-329152b6966e.png)
 
-![image](https://user-images.githubusercontent.com/22611282/178991306-208b1d5b-d095-4b8b-90f5-7d414f93dd1d.png)
 
 
 
