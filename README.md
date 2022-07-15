@@ -80,16 +80,16 @@ Considering finished as accepted;; The receipts with accepted status had more pu
 
 Hello Team,
 
-I hope you are doing good! While I was analyzing the fetch rewards data, I had encountered few descripencies, I write this email in hope to get clarification on it. Below are few queries:
+I hope you are doing good! While I was analyzing the fetch rewards data, I had encountered few descripencies, I am writing this email in hope to get clarification on below few queries:
 
 1. The json files include many nested fileds, is it possible to get the rewardsReceiptItemList column, found in the Receipts file, and the CPG column, located in the Brands file, expanded seperately in any other excel/text file.
 2. For the Users table, there are so many users who had 'FETCH-STAFF' as the role. Is it possible to get specified roles of the users
 3. There ae some many missing values in the receipts and brand files
-4. The userId is not unique
+4. The Id in the users table is not unique;; which doesnot make a primary key and there are duplicate userId.
 
 I do have few questions on the data
 1. How do I fill the missing values?
-2. Which fields can be removed in the tables?
+2. Which fields can be removed from the tables?
 3. Is it possible to share with me the original data from which the json files are extracted?
 
 I would be glad to discuss on the above points . I am flexible for this week and next week. Please let me know your avaibility so that we can have a elaborate discussion on these observations. Looking forward for your reply
