@@ -36,9 +36,9 @@ In order to getting started, I had imported the json files into table using tabl
 
 ## When considering average spend from receipts with 'rewardsReceiptStatus’ of ‘Accepted’ or ‘Rejected’, which is greater?
 
-SELECT r.rewardsReceiptStatus, sum(r.purchasedItemCount)
+``` SELECT r.rewardsReceiptStatus, sum(r.purchasedItemCount)
 FROM receipts r
-GROUP BY r.rewardsReceiptStatus;
+GROUP BY r.rewardsReceiptStatus; ```
 
 Average spend from receipts with 'rewardsReceiptStatus' of accepted is not in the table but, considering finished as accepted ;; accepted is greater than receipts with 'rewardsReceiptStatus' of rejected
 
@@ -50,9 +50,9 @@ Average spend from receipts with 'rewardsReceiptStatus' of accepted is not in th
 
 ## When considering total number of items purchased from receipts with 'rewardsReceiptStatus’ of ‘Accepted’ or ‘Rejected’, which is greater?
 
-SELECT createdDate__$date from users
+``` SELECT createdDate__$date from users
 ORDER BY createdDate__$date desc
-LIMIT 10;
+LIMIT 10; ```
 
 Considering finished as accepted;; The receipts with accepted status had more purchases than of rejected.
 
@@ -61,7 +61,7 @@ Considering finished as accepted;; The receipts with accepted status had more pu
 
 # Third: Evaluate the Data Quality Issues
 
-## Select * from brands
+## ``` Select * from brands ```
 
 1.there are some many missing data in all the tables
 
