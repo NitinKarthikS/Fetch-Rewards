@@ -31,6 +31,8 @@ In order to getting started, I had imported the json files into table using tabl
 
 ## What are the top 5 brands by receipts scanned for most recent month?
 
+If the product table is created after analyzing all the json files;; the below would be the possible query to find the top 5 brands by receipts
+
 ```select brand, count(*) from product p join brands b on p.brand_id = b.id join receipts r on r.id = p.receipts_id where date_trunc('month', r.purchaseDate) = max(date_trunc('month', r.purchaseDate)) order by count(*) desc limit 5;```
 
 ## When considering average spend from receipts with 'rewardsReceiptStatus’ of ‘Accepted’ or ‘Rejected’, which is greater?
