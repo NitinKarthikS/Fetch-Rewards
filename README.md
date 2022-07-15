@@ -32,13 +32,11 @@ In order to getting started, I had imported the json files into table using tabl
 
 ## What are the top 5 brands by receipts scanned for most recent month?
 
-``` select brand, count(*) from product p join brands b on p.brand_id = b.id join receipts r on r.id = p.receipts_id where date_trunc('month', r.purchaseDate) = max(date_trunc('month', r.purchaseDate)) order by count(*) desc limit 5; ```
+```select brand, count(*) from product p join brands b on p.brand_id = b.id join receipts r on r.id = p.receipts_id where date_trunc('month', r.purchaseDate) = max(date_trunc('month', r.purchaseDate)) order by count(*) desc limit 5;```
 
 ## When considering average spend from receipts with 'rewardsReceiptStatus’ of ‘Accepted’ or ‘Rejected’, which is greater?
 
-``` SELECT r.rewardsReceiptStatus, sum(r.purchasedItemCount)
-FROM receipts r
-GROUP BY r.rewardsReceiptStatus; ```
+``` SELECT r.rewardsReceiptStatus, sum(r.purchasedItemCount) FROM receipts r GROUP BY r.rewardsReceiptStatus; ```
 
 Average spend from receipts with 'rewardsReceiptStatus' of accepted is not in the table but, considering finished as accepted ;; accepted is greater than receipts with 'rewardsReceiptStatus' of rejected
 
@@ -50,9 +48,7 @@ Average spend from receipts with 'rewardsReceiptStatus' of accepted is not in th
 
 ## When considering total number of items purchased from receipts with 'rewardsReceiptStatus’ of ‘Accepted’ or ‘Rejected’, which is greater?
 
-``` SELECT createdDate__$date from users
-ORDER BY createdDate__$date desc
-LIMIT 10; ```
+``` SELECT createdDate__$date from users ORDER BY createdDate__$date desc LIMIT 10; ```
 
 Considering finished as accepted;; The receipts with accepted status had more purchases than of rejected.
 
@@ -61,7 +57,7 @@ Considering finished as accepted;; The receipts with accepted status had more pu
 
 # Third: Evaluate the Data Quality Issues
 
-## ``` Select * from brands ```
+``` Select * from brands ```
 
 1.there are some many missing data in all the tables
 
@@ -99,5 +95,5 @@ I would be glad to discuss on the above points . I am flexible for this week and
 
 Thank you for your time.
 
-Regards,
-Nitin.
+Best Regards,
+Nitin Karthik.
