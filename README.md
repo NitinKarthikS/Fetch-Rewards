@@ -67,11 +67,11 @@ Considering finished as accepted;; The receipts with accepted status had more pu
 
 ![image](https://user-images.githubusercontent.com/22611282/178998469-d5f4ad68-cf25-4755-aaf7-23d9b55a1bbf.png)
 
-3. The roles of users are Consumer and the fetch_staff, the staff is in general description provided for the user role which not suggestable
+3. The roles of users are Consumer and the fetch_staff, the staff is in general description provided for the user role which not specific
 
 ![image](https://user-images.githubusercontent.com/22611282/178999354-197b866b-0292-4fd5-9123-62ce4e48665d.png)
 
-4. The brand names are not valid
+4. Upon looking at the brand names, from the brands table, some of the brand names are not valid
 
 ![image](https://user-images.githubusercontent.com/22611282/179000086-c520c18c-919c-4a5d-859d-55686f47dce9.png)
 
