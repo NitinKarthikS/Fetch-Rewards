@@ -46,8 +46,6 @@ Average spend from receipts with 'rewardsReceiptStatus' of accepted is not in th
 
 
 
-
-
 ## When considering total number of items purchased from receipts with 'rewardsReceiptStatus’ of ‘Accepted’ or ‘Rejected’, which is greater?
 
 ``` SELECT rewardsReceiptStatus, sum(purchasedItemCount) as ItemCount FROM receipts GROUP BY rewardsReceiptStatus; ```
@@ -56,6 +54,20 @@ Considering finished as accepted;; The receipts with accepted status had more pu
 
 ![image](https://user-images.githubusercontent.com/109328970/179167535-96db822e-4692-42b8-a481-405b408057fe.png)
 
+
+## Which brand has the most spend among users who were created within the past 6 months?
+
+this data can be retrived once we have the product table ready. Assuming we have the product table; below is the query for that
+
+``` select b.name,count(*) from brands b, users u, receipts r, product p  
+join product p on p.brand_id = b.cpg_id join users on u.id = r.userId where u.createdDate > DATEADD(mm, -6, GETDATE()) order by b.name; ```
+
+## Which brand has the most transactions among users who were created within the past 6 months?
+
+this data can be retrived once we have the product table ready. Assuming we have the product table; below is the query for that
+
+``` select b.name,  r.purchasedItemCount from receipts r, users u, product p, brands b
+join product p on p.brand_id = b.cpg_id join users on u.id = r.userId where u.createdDate > DATEADD(mm, -6, GETDATE()); ```
 
 
 # Third: Evaluate the Data Quality Issues
