@@ -36,7 +36,7 @@ In order to getting started, I had imported the json files into table using tabl
 
 ## When considering average spend from receipts with 'rewardsReceiptStatus’ of ‘Accepted’ or ‘Rejected’, which is greater?
 
-``` SELECT r.rewardsReceiptStatus, sum(r.purchasedItemCount) FROM receipts r GROUP BY r.rewardsReceiptStatus; ```
+``` SELECT rewardsReceiptStatus, avg(purchasedItemCount) as AvgAmount FROM receipts GROUP BY rewardsReceiptStatus; ```
 
 Average spend from receipts with 'rewardsReceiptStatus' of accepted is not in the table but, considering finished as accepted ;; accepted is greater than receipts with 'rewardsReceiptStatus' of rejected
 
@@ -48,7 +48,7 @@ Average spend from receipts with 'rewardsReceiptStatus' of accepted is not in th
 
 ## When considering total number of items purchased from receipts with 'rewardsReceiptStatus’ of ‘Accepted’ or ‘Rejected’, which is greater?
 
-``` SELECT createdDate__$date from users ORDER BY createdDate__$date desc LIMIT 10; ```
+``` SELECT rewardsReceiptStatus, sum(purchasedItemCount) as ItemsCount FROM receipts GROUP BY rewardsReceiptStatus; ```
 
 Considering finished as accepted;; The receipts with accepted status had more purchases than of rejected.
 
