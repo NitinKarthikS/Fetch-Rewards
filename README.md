@@ -12,7 +12,9 @@ Inorder to link the recepits and brands, I would like to create the product tabl
 
 # Second: Query
 
-In order to getting started, I had imported the json files into table using table import wizard in Mysql Workbech
+In order to getting started, I had imported the json files into table using table import wizard in Mysql Workbech and all the tables would be imported and the data can be seen with the select query
+
+
 
 ![img-1](https://user-images.githubusercontent.com/22611282/178990611-c890d987-2e45-4b48-b292-cf67768f2646.jpg)
 
@@ -26,7 +28,7 @@ In order to getting started, I had imported the json files into table using tabl
 ![image](https://user-images.githubusercontent.com/22611282/178991306-208b1d5b-d095-4b8b-90f5-7d414f93dd1d.png)
 
 
-all the tables would be imported and the data can be seen with the select query
+
 
 ## What are the top 5 brands by receipts scanned for most recent month?
 
